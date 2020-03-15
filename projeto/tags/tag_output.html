@@ -1,10 +1,96 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tag &lt;output&gt;</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+    <h1>Tag &lt;output&gt;</h1>
+    <div class="nav_menu">
+        <p>
+            <a href="tag_option.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_p.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <h2>Definição e Uso</h2>
+    <div class="def">
+        <p>            
+            A tag &lt;output&gt; representa o resultado de um cálculo (realizado por um script por exemplo).<br>
+        </p>
+    </div>  
+
+    <h2>Exemplo</h2>
+    <p>Realiza um cálculo e mostra o resultado numa tag &lt;output&gt;:</p>
+    <div class="code">
+        <pre>
+            <code>
+                &lt;form oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt;0
+                    &lt;input type="range" id="a" value="50"&gt;100
+                    +&lt;input type="number" id="b" value="50"&gt;
+                    =&lt;output name="x" for="a b"&gt;&lt;/output&gt;
+                &lt;/form&gt;
+            </code>
+        </pre>
+    </div>
     
+    
+
+    <h2>Atributos</h2>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>for</td>
+                    <td><i>element_id</i></td>
+                    <td>Especifica o relacionamento entre o resultado do cálculo e os elementos usados no cálculo</td>
+                  </tr>
+                  <tr>
+                    <td>form</td>
+                    <td><i>form_id</i></td>
+                    <td>Especifica qual formulário a output pertence</td>
+                  </tr>
+                  <tr>
+                    <td>name</td>
+                    <td><i>name</i></td>
+                    <td>Especifica o nome para a output</td>
+                  </tr>
+            </tbody>
+        </table>
+    </div>        
+    
+    <hr>
+
+    <div class="nav_menu">
+        <p>
+            <a href="tag_option.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_p.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <footer>
+        <p>IFNMG - Campus Montes Claros<br> Desenvolvimento Web<br> ©2020 - Jefeson Martins Delazeri
+        </p>
+    </footer>
+
 </body>
+
 </html>

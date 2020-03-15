@@ -1,10 +1,84 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tag &lt;picture&gt;</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+    <h1>Tag &lt;picture&gt;</h1>
+    <div class="nav_menu">
+        <p>
+            <a href="tag_p.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_pre.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <h2>Definição e Uso</h2>
+    <div class="def">
+        <p>            
+            A tag &lt;picture&gt; da aos desenvolvedores web mais flexibilidade em especificar recursos de imagens.<br>
+            O uso mais comum da tag &lt;picture&gt; será para direção de artística em designers responsivos. Ao invés de ter uma imagem que será escalada de acordo com o tamanho da viewport, múltiplas imagens podem ser designadas para um melhor resultado.<br>
+            A tag &lt;picture&gt; carrega duas diferentes tags: uma ou mais tag &lt;source&gt; e uma tag &lt;img&gt;.<br>
+            A tag &lt;source&gt; tem os seguintes atributos:
+        </p>
+
+        <ul>
+            <li>srcset (requerido) - define a URL da imagem a ser exibida</li>
+            <li>media - aceita qualquer consulta de mídia válida que normalmente seria definida em um CSS</li>
+            <li>sizes - define um descritor de largura única, uma consulta de mídia única com descritor de largura ou uma lista delimitada por vírgula de consultas de mídia com um descritor de largura</li>
+            <li>type - define o tipo MIME</li>
+        </ul>
+
+        <p>
+            O navegador usará os valores do atributo para carregar a imagem mais apropriada. O navegador usará o primeiro elemento &lt;source&gt; com uma dica correspondente e ignorará as seguintes tags &lt;source&gt;.<br>
+            A tag &lt;img&gt; é requerida como a última tag filha da tag &lt;picture&gt;. O navegador usará a primeira tag &lt;source&gt; compatível como principal e ignorará as seguintes.<br>
+            A tag &lt;picture&gt; trabalha de forma similar a tag &lt;video&gt; e a tag &lt;audio&gt;. Você define diferentes fontes, e a primeira fonte que se encaixar com a preferência é a ser usada.<br>
+        </p>
+    </div>  
+
+    <h2>Exemplo</h2>
+    <p>Como usar a tag &lt;picture&gt;:</p>
+    <div class="code">
+        <pre>
+            <code>
+                &lt;picture&gt;
+                    &lt;source media="(min-width: 650px)" srcset="img_pink_flowers.jpg"&gt;
+                    &lt;source media="(min-width: 465px)" srcset="img_white_flower.jpg"&gt;
+                    &lt;img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt;
+                &lt;/picture&gt;
+            </code>
+        </pre>
+    </div>
     
+
+    <h2>Atributos</h2>
+    <p>A tag &lt;picture&gt; suporta os Atributos Globais e os Atributos de Eventos.</p>
+ 
+    <hr>
+
+    <div class="nav_menu">
+        <p>
+            <a href="tag_p.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_pre.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <footer>
+        <p>IFNMG - Campus Montes Claros<br> Desenvolvimento Web<br> ©2020 - Jefeson Martins Delazeri
+        </p>
+    </footer>
+
 </body>
+
 </html>

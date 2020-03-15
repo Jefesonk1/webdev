@@ -1,10 +1,120 @@
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tag &lt;label&gt;</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-    
+    <h1>Tag &lt;label&gt;</h1>
+    <div class="nav_menu">
+        <p>
+            <a href="tag_kbd.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_legend.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <h2>Definição e Uso</h2>
+    <div class="def">
+        <p>            
+            A tag &lt;label&gt; define um rótulo para vários elementos:<br>
+        </p>
+        <ul>
+            <li>&lt;input type="color"&gt;</li>
+            <li>&lt;input type="date"&gt;</li>
+            <li>&lt;input type="datetime-local"&gt;</li>
+            <li>&lt;input type="email"&gt;</li>
+            <li>&lt;input type="file"&gt;</li>
+            <li>&lt;input type="month"&gt;</li>
+            <li>&lt;input type="number"&gt;</li>
+            <li>&lt;input type="password"&gt;</li>
+            <li>&lt;input type="radio"&gt;</li>
+            <li>&lt;input type="range"&gt;</li>
+            <li>&lt;input type="search"&gt;</li>
+            <li>&lt;input type="tel"&gt;</li>
+            <li>&lt;input type="text"&gt;</li>
+            <li>&lt;input type="time"&gt;</li>
+            <li>&lt;input type="url"&gt;</li>
+            <li>&lt;meter&gt;</li>
+            <li>&lt;progress&gt;</li>
+            <li>&lt;select&gt;</li>
+            <li>&lt;textarea&gt;</li>
+        </ul>
+        <p>
+            O usó correto dos rótulos com os elementos acima beneficiará:<br>
+            Usuários de leitores de tela (lerão o rótulo quando o usuário estiver focado no elemento).<br>
+            Usuários que têm dificuldade em clicar em regiões muito pequenas (como caixas de seleção) - porque quando um usuário clica no texto dentro do elemento &lt;label&gt;, alterna a entrada (isso aumenta a área de acerto).<br>
+            O atributo for da tag &lt;label&gt; deve ser igual ao atributo id do elemento relacionado para uni-los.<br>
+        </p>
+    </div>  
+
+    <h2>Exemplo</h2>
+    <p>Três botões radio com rótulos:</p>
+    <div class="code">
+        <pre>
+            <code>
+                &lt;form action="/action_page.php"&gt;
+                    &lt;label for="male"&gt;Male&lt;/label&gt;
+                    &lt;input type="radio" name="gender" id="male" value="male"&gt;&lt;br&gt;
+                    &lt;label for="female"&gt;Female&lt;/label&gt;
+                    &lt;input type="radio" name="gender" id="female" value="female"&gt;&lt;br&gt;
+                    &lt;label for="other"&gt;Other&lt;/label&gt;
+                    &lt;input type="radio" name="gender" id="other" value="other"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                &lt;/form&gt;
+            </code>
+        </pre>
+    </div>
+
+    <h2>Atributos</h2>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>for</td>
+                    <td><i>element_id</i></td>
+                    <td>Especifica a qual elemento do formulário o rótulo está vinculado</td>
+                  </tr>
+                  <tr>
+                    <td>form</td>
+                    <td><i>form_id</i></td>
+                    <td>Especifica a qual formulário o rótulo pertence</td>
+                  </tr>
+            </tbody>
+        </table>
+    </div>    
+
+    <hr>
+
+    <div class="nav_menu">
+        <p>
+            <a href="tag_kbd.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_legend.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <footer>
+        <p>IFNMG - Campus Montes Claros<br> Desenvolvimento Web<br> ©2020 - Jefeson Martins Delazeri
+        </p>
+    </footer>
+
 </body>
+
 </html>

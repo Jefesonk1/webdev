@@ -32,13 +32,53 @@
     <div class="code">
         <pre>
             <code>
-                &lt;em&gt;Emphasized text&lt;/em&gt;
+            &lt;form action="/action_page.php">
+                &lt;fieldset>
+                    &lt;legend>Personalia:&lt;/legend>
+                    &lt;label for="fname">First name:&lt;/label>
+                    &lt;input type="text" id="fname" name="fname">&lt;br>&lt;br>
+                    &lt;label for="lname">Last name:&lt;/label>
+                    &lt;input type="text" id="lname" name="lname">&lt;br>&lt;br>
+                    &lt;label for="email">Email:&lt;/label>
+                    &lt;input type="email" id="email" name="email">&lt;br>&lt;br>
+                    &lt;label for="birthday">Birthday:&lt;/label>
+                    &lt;input type="date" id="birthday" name="birthday">&lt;br>&lt;br>
+                    &lt;input type="submit" value="Submit">
+                &lt;/fieldset>
+            &lt;/form>
             </code>
         </pre>
     </div>
 
     <h2>Atributos</h2>
-    <p>A tag &lt;em&gt; suporta os Atributos Globais e os Atributos de Eventos.</p>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>disabled</td>
+                    <td>disabled</td>
+                    <td>Especifical que um grupo de elementos relacionados de um formulário devem ser desativados</td>
+                </tr>
+                  <tr>
+                    <td>form</td>
+                    <td><i>form_id</i></td>
+                    <td>Especifica a qual formulário a tag fieldset pertence</td>
+                </tr>
+                  <tr>
+                    <td>name</td>
+                    <td><i>text</i></td>
+                    <td>Especifica o nome para o fieldset</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>    
 
     <hr>
     <div class="nav_menu">

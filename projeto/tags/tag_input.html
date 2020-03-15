@@ -1,10 +1,288 @@
+<!-- TRADUZIR A TABELA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX -->
+
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tag &lt;input&gt;</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
+    <h1>Tag &lt;input&gt;</h1>
+    <div class="nav_menu">
+        <p>
+            <a href="tag_img.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_ins.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <h2>Definição e Uso</h2>
+    <div class="def">
+        <p>
+            A tag &lt;input&gt; especifica um campo de entrada onde usuários podem inserir dados.<br>
+            Elementos &lt;input&gt; são usados dentro de uma tag &lt;form&gt; para declarar controles de entrada que permitem que usuários insiram dados.<br>
+            Um campo de entrada pode variar, dependendo do tipo do atributo.<br>
+        </p>
+    </div>  
+
+    <h2>Exemplo</h2>
+    <p>Um formulário HTML com três campos de entrada; dois campos de texto e um botão de submissão:</p>
+    <div class="code">
+        <pre>
+            <code>
+                &lt;form action="/action_page.php"&gt;
+                    &lt;label for="fname"&gt;First name:&lt;/label&gt;
+                    &lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;label for="lname"&gt;Last name:&lt;/label&gt;
+                    &lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+                    &lt;input type="submit" value="Submit"&gt;
+                &lt;/form&gt;
+            </code>
+        </pre>
+    </div>
+
+    <h2>Atributos</h2>
+    <div class="table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributos</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+                <tr>
+                    <td>accept</td>
+                    <td><em>file_extension</em><br>
+                 audio/*<br>
+                 video/*<br>
+                 image/*<br>
+                 <i>media_type</i></td>
+                    <td>Specifies a filter for what file types the user can pick from the file 
+                    input dialog box (only for type=&quot;file&quot;)</td>
+                </tr>
+                  <tr>
+                    <td>alt</td>
+                    <td><i>text</i></td>
+                    <td>Specifies an alternate text for images (only for type=&quot;image&quot;)</td>
+                  </tr>
+                  <tr>
+                    <td>autocomplete</td>
+                    <td>on<br>
+                 off</td>
+                    <td>Specifies whether an &lt;input&gt; element should have autocomplete enabled</td>
+                  </tr>
+                  <tr>
+                    <td>autofocus</td>
+                    <td>autofocus</td>
+                    <td>Specifies that an &lt;input&gt; element should automatically get focus when the page loads</td>
+                  </tr>
+                  <tr>
+                    <td>checked</td>
+                    <td>checked</td>
+                    <td>Specifies that an &lt;input&gt; element should be pre-selected when the page loads (for type=&quot;checkbox&quot; or type=&quot;radio&quot;)</td>
+                  </tr>
+                    <tr>
+                    <td>dirname</td>
+                    <td><i>inputname</i>.dir</td>
+                    <td>Specifies that the text direction will be submitted</td>
+                    </tr>
+                  <tr>
+                    <td>disabled</td>
+                    <td>disabled</td>
+                    <td>Specifies that an &lt;input&gt; element should be disabled</td>
+                  </tr>
+                  <tr>
+                    <td>form</td>
+                    <td><i>form_id</i></td>
+                    <td>Specifies the form the &lt;input&gt; element belongs to</td>
+                  </tr>
+                  <tr>
+                    <td>formaction</td>
+                    <td><i>URL</i></td>
+                    <td>Specifies the URL of the file that will process the input control when the form is submitted (for type=&quot;submit&quot; and type=&quot;image&quot;)</td>
+                  </tr>
+                  <tr>
+                    <td>formenctype</td>
+                    <td>application/x-www-form-urlencoded<br>
+                 multipart/form-data<br>
+                 text/plain</td>
+                    <td>Specifies how the form-data should be encoded when submitting it to the server (for type=&quot;submit&quot; and type=&quot;image&quot;)</td>
+                  </tr>
+                  <tr>
+                    <td>formmethod</td>
+                    <td>get<br>post</td>
+                    <td>Defines the HTTP method for sending data to the action URL (for type=&quot;submit&quot; and type=&quot;image&quot;)</td>
+                  </tr>
+                  <tr>
+                    <td>formnovalidate</td>
+                    <td>formnovalidate</td>
+                    <td>Defines that form elements should not be validated when submitted</td>
+                  </tr>
+                  <tr>
+                    <td>formtarget</td>
+                    <td>_blank<br>
+                _self<br>
+                _parent<br>
+                _top<br>
+                 <em>framename</em></td>
+                    <td>Specifies where to display the response that is received after submitting the form (for type=&quot;submit&quot; and type=&quot;image&quot;)</td>
+                  </tr>
+                  <tr>
+                    <td>height</td>
+                    <td><i>pixels</i></td>
+                    <td>Specifies the height of an &lt;input&gt; element (only for type=&quot;image&quot;)</td>
+                  </tr>
+                  <tr>
+                    <td>list</td>
+                    <td><i>datalist_id</i></td>
+                    <td>Refers to a &lt;datalist&gt; element that contains pre-defined options for an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>max</td>
+                    <td><i>number<br>
+                 date</i></td>
+                    <td>Specifies the maximum value for an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>maxlength</td>
+                    <td><i>number</i></td>
+                    <td>Specifies the maximum number of characters allowed in an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>min</td>
+                    <td><i>number<br>
+                 date</i></td>
+                    <td>Specifies a minimum value for an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>minlength</td>
+                    <td><i>number</i></td>
+                    <td>Specifies the minimum number of characters required in an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>multiple</td>
+                    <td>multiple</td>
+                    <td>Specifies that a user can enter more than one value in an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>name</td>
+                    <td><i>text</i></td>
+                    <td>Specifies the name of an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>pattern</td>
+                    <td><em>regexp</em></td>
+                    <td>Specifies a regular expression that an &lt;input&gt; element's value is checked against</td>
+                  </tr>
+                  <tr>
+                    <td>placeholder</td>
+                    <td><i>text</i></td>
+                    <td>Specifies a short hint that describes the expected value of an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>readonly</td>
+                    <td>readonly</td>
+                    <td>Specifies that an input field is read-only</td>
+                  </tr>
+                  <tr>
+                    <td>required</td>
+                    <td>required</td>
+                    <td>Specifies that an input field must be filled out before submitting the form</td>
+                  </tr>
+                  <tr>
+                    <td>size</td>
+                    <td><i>number</i></td>
+                    <td>Specifies the width, in characters, of an &lt;input&gt; element</td>
+                  </tr>
+                  <tr>
+                    <td>src</td>
+                    <td><i>URL</i></td>
+                    <td>Specifies the URL of the image to use as a submit button (only for 
+                    type=&quot;image&quot;)</td>
+                  </tr>
+                  <tr>
+                    <td>step</td>
+                    <td>
+                 <i>number<br></i>any</td>
+                    <td>Specifies the interval between legal numbers in an input field</td>
+                  </tr>
+                  <tr>
+                    <td>type</td>
+                    <td>button<br>
+                      checkbox<br>
+                 color<br>
+                      date <br>
+                    datetime-local <br>
+                 email <br>
+                      file<br>
+                      hidden<br>
+                      image<br>
+                      month <br>
+                 number <br>
+                      password<br>
+                      radio<br>
+                      range <br>
+                      reset<br>
+                 search<br>
+                      submit<br>
+                 tel<br>
+                      text<br>
+                 time <br>
+                 url<br>
+                 week </td>
+                    <td>Specifies the type &lt;input&gt; element to display</td>
+                  </tr>
+                  <tr>
+                    <td>value</td>
+                    <td><i>text</i></td>
+                    <td>Specifies the value of an &lt;input&gt; element<b><br>
+                 &nbsp;</b></td>
+                  </tr>
+                  <tr>
+                    <td>width</td>
+                    <td><i>pixels</i></td>
+                    <td>Specifies the width of an &lt;input&gt; element (only for type=&quot;image&quot;)</td>
+                  </tr>
+            </tbody>
+        </table>
+    </div>        
     
+
+    <hr>
+
+    <div class="nav_menu">
+        <p>
+            <a href="tag_img.html">Página Anterior</a> |
+            <a href="../index.html">Página Inicial</a> |
+            <a href="tag_ins.html">Próxima Página</a>
+        </p>
+        <p>
+            Verificar o 
+            <a href="../suportedosnavegadores.html">Suporte dos Navegadores</a>
+        </p>
+    </div>
+    <footer>
+        <p>IFNMG - Campus Montes Claros<br> Desenvolvimento Web<br> ©2020 - Jefeson Martins Delazeri
+        </p>
+    </footer>
+
 </body>
+
 </html>
