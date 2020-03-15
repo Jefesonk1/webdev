@@ -1,43 +1,11 @@
 
-
-@font-face {
-    font-family: 'Segoe UI Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Regular'), url('../fonts/Segoe UI.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Segoe UI Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Italic'), url('../fonts/Segoe UI Italic.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Segoe UI Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Bold'), url('../fonts/Segoe UI Bold.woff') format('woff');
-    }
-    
-    
-    @font-face {
-    font-family: 'Segoe UI Bold Italic';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Segoe UI Bold Italic'), url('../fonts/Segoe UI Bold Italic.woff') format('woff');
-    }
-
-
-
 body {
     margin-left: 12.5%;
     margin-right: 12.5%;
-    background-color: #15202b;
+    /* background-color: #2c3539; */
+    background: radial-gradient(#003, #000);
     color: rgba(255, 255,255, 0.98);
+
 }
 
 table {
@@ -45,24 +13,25 @@ table {
     width: 100%;
 }
 
-th {
+th{
     padding: 2em;
+    color: #e0c585;    
 }
 thead {
     border: 2px solid #e0c585;
+    /* background-color: #1d2c3b; */
 }
+
+
 table{
     border: 2px solid #e0c585;
 }
 
-tbody tr:nth-child(even) {
-    background: #CCC;
-    color:#15202b;
+tbody tr:nth-child(odd) {
+    background: #DCA;
+    color:#000;
 }
 
-h1 {
-    text-align: center;
-}
 
 td {
     height: 6em;
@@ -72,8 +41,12 @@ td {
 .code {
     padding: 1em;
     border: 3px solid #e0c585;
-    background-color: #1d2c3b;
+    background-color: #313B40;
     font-size: 1.5em;
+    
+}
+pre{
+    white-space: pre-wrap; 
 }
 
 .nav_menu{
@@ -82,20 +55,36 @@ td {
 }
 .nav_menu a, .nav_menu p{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #e0c585;
     font-family: Arial, Helvetica, sans-serif
 }
 
 .nav_menu{
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     color: #e0c585;
     font-family: Arial, Helvetica, sans-serif
 }
 
+.nav_menu a:hover{
+    text-decoration: none;
+    font-size: 1.4em;
+    color: #FFF;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.nav_menu{
+    border: 2px solid #e0c585;
+    padding: 0.5em;
+    /* here */
+}
+
+
 
 h1{
+    text-align: center;
     padding: 0.8em;
     font-size: 3.5em;
     color: #e7d6b4;
@@ -125,6 +114,7 @@ hr {
     background-color: #584321;
     border: none;
 }
+
 a{
     color: #e0c585;
     text-decoration: none;
@@ -132,7 +122,16 @@ a{
     font-size: 2em;
 }
 
-tbody tr:nth-child(even) a{
-    background: #CCC;
-    color:#15202b;
+a:hover{
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+th{
+    font-size: 1.8em;
+}
+td{
+    font-size: 1.5em;
 }
