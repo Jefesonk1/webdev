@@ -1,137 +1,88 @@
-
-body {
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    /* background-color: #2c3539; */
+body{
+    margin: 0;
     background: radial-gradient(#003, #000);
-    color: rgba(255, 255,255, 0.98);
-
+    color: rgba(255, 255,255, 0.95);
 }
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th{
-    padding: 2em;
-    color: #e0c585;    
-}
-thead {
-    border: 2px solid #e0c585;
-    /* background-color: #1d2c3b; */
-}
-
-
-table{
-    border: 2px solid #e0c585;
-}
-
-tbody tr:nth-child(odd) {
-    background: #DCA;
-    color:#000;
-}
-
-
-td {
-    height: 6em;
+h1{
     text-align: center;
-}
-
-.code {
     padding: 1em;
-    border: 3px solid #e0c585;
-    background-color: #313B40;
-    font-size: 1.5em;
-    
+    font-size: 2.5em;
+    color: #e7d6b4;
 }
-pre{
-    white-space: pre-wrap; 
+
+h2{
+    padding: 0.5px;
+    font-size: 2em;
+    color: #e7d6b4;
 }
 
 .nav_menu{
+    width: 75%;
+    margin: 0 auto;
     text-align: center;
-    
-}
-.nav_menu a, .nav_menu p{
-    text-decoration: none;
-    font-size: 1.4em;
     color: #e0c585;
-    font-family: Arial, Helvetica, sans-serif
+    border: 2px solid #e0c585;
+    padding: 0.5em;
+    /* font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif; */
 }
 
-.nav_menu{
+.nav_menu a{
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.1em;
     color: #e0c585;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 .nav_menu a:hover{
-    text-decoration: none;
-    font-size: 1.4em;
+    /* text-decoration: none; */
+    font-size: 1.15em;
     color: #FFF;
-    font-family: Arial, Helvetica, sans-serif
 }
 
-
-.nav_menu{
+.table table{
+    width: 75%;
     border: 2px solid #e0c585;
-    padding: 0.5em;
-    /* here */
+    margin: 1em auto;
+    border-collapse: collapse;
+
+}
+.table thead{
+    
+    border: 2px solid #e0c585;
 }
 
-
-
-h1{
-    text-align: center;
-    padding: 0.8em;
-    font-size: 3.5em;
-    color: #e7d6b4;
+.table thead th{
+    padding: 1em;
 }
 
-
-h2{
-    padding: 1px;
-    font-size: 2em;
-    color: #e7d6b4;
+.table tbody td{
+    padding: 2em;
 }
 
-p{
-    font-size: 1.5em;
-}
-li{ 
-    font-size: 1.5em;
+.table tbody tr:nth-child(odd) {
+    background: #e0C585;
+    color:#000;
 }
 
-footer{
-    text-align: center;
-}
-
-hr {
-    height: 2px;
-    color: #584321;
-    background-color: #584321;
-    border: none;
-}
-
-a{
-    color: #e0c585;
+.table tbody tr:nth-child(odd) a{
+    color:#000;
     text-decoration: none;
-    font-weight: bold;
-    font-size: 2em;
 }
 
-a:hover{
-    color: #FFF;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 2em;
+.table tbody tr a{
+    color: #fff;
+    text-decoration: ;
 }
 
-th{
-    font-size: 1.8em;
+.def{
+    width: 75%;
+    margin: 0 auto;
 }
-td{
-    font-size: 1.5em;
-}
+
+pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+  }
